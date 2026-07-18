@@ -198,3 +198,8 @@ In a world often disconnected from spiritual values, Islam offers a comprehensiv
 > *"Indeed, the most honored of you in the sight of God is the most righteous of you."* (Quran 49:13)
 
 May this guide serve as a step toward deeper understanding and practice of the beautiful faith of Islam.
+
+---
+
+[pathtoislam](https://pathtoislam.github.io/pathtoislam/)
+July 2026
