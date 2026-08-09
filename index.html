@@ -6,7 +6,7 @@
   <!-- SEO & Search Tags -->
   <title>Islamic Guidance | Quran, Hadith, Salah, Dua &amp; Zikr</title>
   <meta name="description" content="Learn about Islam, Quran, Hadith, Dua, Zikr, Supplication, Namaz. A comprehensive guide to faith, spiritual practice, and the Five Pillars of Islam." />
-  <meta name="keywords" content="Islam, Quran, Hadith, Dua, Zikr, Supplication, Namaz, Salah, Shahadah, Sahih Hadith, Day of Resurrection, Yawm al-Qiyamah, Islamic resources, free Islamic books, Hisnul Muslim, Riyad us-Saliheen" />
+  <meta name="keywords" content="Islam, Quran, Hadith, Dua, Zikr, Supplication, Namaz, Salah, Shahadah, Sahih Hadith, Day of Resurrection, Yawm al-Qiyamah, Islamic resources, free Islamic books, Hisnul Muslim, Riyad us-Saliheen, Prophets in Quran" />
   <meta name="author" content="Aftab Shaikh" />
   <link rel="canonical" href="https://pathtoislam.github.io/pathtoislam/" />
   <!-- Open Graph / Social -->
@@ -131,8 +131,7 @@
       border-bottom-color: #1e5f6b;
     }
     .link-list {
-      
-      margin-left: 10;
+      margin-left: 0;
       padding-left: 0;
     }
     .link-list li {
@@ -224,6 +223,66 @@
       flex-wrap: wrap;
       gap: 0.8rem 1.2rem;
     }
+    .prophet-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 0.6rem 1.5rem;
+      margin: 1rem 0 1.5rem 0;
+    }
+    .prophet-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.35rem 0.4rem 0.35rem 0.8rem;
+      border-bottom: 1px solid #edebe5;
+      font-size: 0.95rem;
+    }
+    .prophet-item .name-ar {
+      font-weight: 600;
+      color: #0b2a41;
+      direction: rtl;
+      unicode-bidi: embed;
+      font-size: 1.05rem;
+    }
+    .prophet-item .mention-count {
+      background: #eef3ee;
+      padding: 0.05rem 0.7rem;
+      border-radius: 30px;
+      font-size: 0.8rem;
+      color: #1e4a4a;
+      white-space: nowrap;
+    }
+    .prophet-item .name-en {
+      color: #1e3a5f;
+    }
+    .prophet-highlight {
+      background: #f6f9f5;
+      border-radius: 16px;
+      padding: 0.8rem 1.8rem;
+      margin: 1rem 0;
+      border-left: 4px solid #2a7f6e;
+    }
+    .prophet-highlight ul {
+      margin-bottom: 0.2rem;
+    }
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      max-width: 100%;
+      background: #000;
+      border-radius: 12px;
+      margin: 1rem 0;
+    }
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+      border-radius: 12px;
+    }
     @media (max-width: 640px) {
       body { padding: 0.8rem; }
       .container { padding: 1.2rem 1.4rem; }
@@ -232,6 +291,9 @@
       .subhead { flex-direction: column; }
       .footer-meta { flex-direction: column; align-items: flex-start; }
       .footer-meta .left-group, .footer-meta .right-group { width: 100%; }
+      .prophet-grid {
+        grid-template-columns: 1fr;
+      }
     }
     .microdata { display: none; }
   </style>
