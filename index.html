@@ -6,7 +6,7 @@
   <!-- SEO & Search Tags -->
   <title>Islamic Guidance | Quran, Hadith, Salah, Dua &amp; Zikr</title>
   <meta name="description" content="Learn about Islam, Quran, Hadith, Dua, Zikr, Supplication, Namaz. A comprehensive guide to faith, spiritual practice, and the Five Pillars of Islam." />
-  <meta name="keywords" content="Islam, Quran, Hadith, Dua, Zikr, Supplication, Namaz, Salah, Shahadah, Sahih Hadith, Day of Resurrection, Yawm al-Qiyamah, Islamic resources, free Islamic books, Hisnul Muslim, Riyad us-Saliheen" />
+  <meta name="keywords" content="Islam, Quran, Hadith, Dua, Zikr, Supplication, Namaz, Salah, Shahadah, Sahih Hadith, Day of Resurrection, Yawm al-Qiyamah, Islamic resources, free Islamic books, Hisnul Muslim, Riyad us-Saliheen, Prophets in Quran" />
   <meta name="author" content="Aftab Shaikh" />
   <link rel="canonical" href="https://pathtoislam.github.io/pathtoislam/" />
   <!-- Open Graph / Social -->
@@ -131,8 +131,7 @@
       border-bottom-color: #1e5f6b;
     }
     .link-list {
-      
-      margin-left: 10;
+      margin-left: 0;
       padding-left: 0;
     }
     .link-list li {
@@ -224,6 +223,66 @@
       flex-wrap: wrap;
       gap: 0.8rem 1.2rem;
     }
+    .prophet-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 0.6rem 1.5rem;
+      margin: 1rem 0 1.5rem 0;
+    }
+    .prophet-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.35rem 0.4rem 0.35rem 0.8rem;
+      border-bottom: 1px solid #edebe5;
+      font-size: 0.95rem;
+    }
+    .prophet-item .name-ar {
+      font-weight: 600;
+      color: #0b2a41;
+      direction: rtl;
+      unicode-bidi: embed;
+      font-size: 1.05rem;
+    }
+    .prophet-item .mention-count {
+      background: #eef3ee;
+      padding: 0.05rem 0.7rem;
+      border-radius: 30px;
+      font-size: 0.8rem;
+      color: #1e4a4a;
+      white-space: nowrap;
+    }
+    .prophet-item .name-en {
+      color: #1e3a5f;
+    }
+    .prophet-highlight {
+      background: #f6f9f5;
+      border-radius: 16px;
+      padding: 0.8rem 1.8rem;
+      margin: 1rem 0;
+      border-left: 4px solid #2a7f6e;
+    }
+    .prophet-highlight ul {
+      margin-bottom: 0.2rem;
+    }
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      max-width: 100%;
+      background: #000;
+      border-radius: 12px;
+      margin: 1rem 0;
+    }
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+      border-radius: 12px;
+    }
     @media (max-width: 640px) {
       body { padding: 0.8rem; }
       .container { padding: 1.2rem 1.4rem; }
@@ -232,6 +291,9 @@
       .subhead { flex-direction: column; }
       .footer-meta { flex-direction: column; align-items: flex-start; }
       .footer-meta .left-group, .footer-meta .right-group { width: 100%; }
+      .prophet-grid {
+        grid-template-columns: 1fr;
+      }
     }
     .microdata { display: none; }
   </style>
@@ -393,18 +455,68 @@
 
   <hr />
 
-  <!-- Zikr -->
+  <!-- Who is Allah? -->
   <h2>Who is Allah?</h2>
-  <iframe width="936" height="526" src="https://www.youtube.com/embed/nIbnUMqLQ78" title="The Throne of Allah - Mindblowing" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/nIbnUMqLQ78" title="The Throne of Allah - Mindblowing" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
 
   <hr />
 
+  <!-- Scientific Miracles of the Quran -->
   <h2>Scientific Miracles of the Quran</h2>
-  
-  <iframe width="936" height="526" src="https://www.youtube.com/embed/N-gY88gOEA8" title="24 Scientific Miracles of the Quran" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-  
-  
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/N-gY88gOEA8" title="24 Scientific Miracles of the Quran" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+
   <hr />
+
+  <!-- 25 PROPHETS MENTIONED IN THE QURAN -->
+  <h2>25 Prophets Mentioned in the Quran</h2>
+  <p>The Quran explicitly mentions <strong>25 prophets and messengers</strong> by name. However, Islamic theology emphasizes that these are not the only prophets God sent; the Quran states that Allah sent a messenger to every nation and that there are many prophets whose stories were not revealed to Prophet Muhammad (PBUH). According to authentic Hadith, there were approximately <strong>124,000 prophets</strong> throughout human history.</p>
+  <p>Below is the chronological list of the <strong>25 prophets mentioned by name in the Quran</strong>, along with the number of times they are mentioned.</p>
+
+  <div class="prophet-grid">
+    <div class="prophet-item"><span><span class="name-ar">آدم</span> <span class="name-en">Adam</span></span> <span class="mention-count">25 times</span></div>
+    <div class="prophet-item"><span><span class="name-ar">إدريس</span> <span class="name-en">Idris (Enoch)</span></span> <span class="mention-count">2 times</span></div>
+    <div class="prophet-item"><span><span class="name-ar">نوح</span> <span class="name-en">Nuh (Noah)</span></span> <span class="mention-count">43 times</span></div>
+    <div class="prophet-item"><span><span class="name-ar">هود</span> <span class="name-en">Hud</span></span> <span class="mention-count">7 times</span></div>
+    <div class="prophet-item"><span><span class="name-ar">صالح</span> <span class="name-en">Saleh</span></span> <span class="mention-count">9 times</span></div>
+    <div class="prophet-item"><span><span class="name-ar">إبراهيم</span> <span class="name-en">Ibrahim (Abraham)</span></span> <span class="mention-count">69 times</span></div>
+    <div class="prophet-item"><span><span class="name-ar">لوط</span> <span class="name-en">Lut (Lot)</span></span> <span class="mention-count">27 times</span></div>
+    <div class="prophet-item"><span><span class="name-ar">إسماعيل</span> <span class="name-en">Ismail (Ishmael)</span></span> <span class="mention-count">12 times</span></div>
+    <div class="prophet-item"><span><span class="name-ar">إسحاق</span> <span class="name-en">Ishaq (Isaac)</span></span> <span class="mention-count">17 times</span></div>
+    <div class="prophet-item"><span><span class="name-ar">يعقوب</span> <span class="name-en">Yaqub (Jacob)</span></span> <span class="mention-count">16 times</span></div>
+    <div class="prophet-item"><span><span class="name-ar">يوسف</span> <span class="name-en">Yusuf (Joseph)</span></span> <span class="mention-count">27 times</span></div>
+    <div class="prophet-item"><span><span class="name-ar">أيوب</span> <span class="name-en">Ayyub (Job)</span></span> <span class="mention-count">4 times</span></div>
+    <div class="prophet-item"><span><span class="name-ar">شعيب</span> <span class="name-en">Shu'ayb (Jethro)</span></span> <span class="mention-count">11 times</span></div>
+    <div class="prophet-item"><span><span class="name-ar">موسى</span> <span class="name-en">Musa (Moses)</span></span> <span class="mention-count">136 times</span></div>
+    <div class="prophet-item"><span><span class="name-ar">هارون</span> <span class="name-en">Harun (Aaron)</span></span> <span class="mention-count">20 times</span></div>
+    <div class="prophet-item"><span><span class="name-ar">داود</span> <span class="name-en">Dawud (David)</span></span> <span class="mention-count">16 times</span></div>
+    <div class="prophet-item"><span><span class="name-ar">سليمان</span> <span class="name-en">Sulaiman (Solomon)</span></span> <span class="mention-count">17 times</span></div>
+    <div class="prophet-item"><span><span class="name-ar">إلياس</span> <span class="name-en">Ilyas (Elijah)</span></span> <span class="mention-count">3 times</span></div>
+    <div class="prophet-item"><span><span class="name-ar">اليسع</span> <span class="name-en">Al-Yasa (Elisha)</span></span> <span class="mention-count">2 times</span></div>
+    <div class="prophet-item"><span><span class="name-ar">يونس</span> <span class="name-en">Yunus (Jonah)</span></span> <span class="mention-count">6 times</span></div>
+    <div class="prophet-item"><span><span class="name-ar">ذو الكفل</span> <span class="name-en">Dhul-Kifl</span></span> <span class="mention-count">2 times</span></div>
+    <div class="prophet-item"><span><span class="name-ar">زكريا</span> <span class="name-en">Zakariya (Zechariah)</span></span> <span class="mention-count">7 times</span></div>
+    <div class="prophet-item"><span><span class="name-ar">يحيى</span> <span class="name-en">Yahya (John)</span></span> <span class="mention-count">5 times</span></div>
+    <div class="prophet-item"><span><span class="name-ar">عيسى</span> <span class="name-en">Isa (Jesus)</span></span> <span class="mention-count">25 times</span></div>
+    <div class="prophet-item"><span><span class="name-ar">محمد</span> <span class="name-en">Muhammad (PBUH)</span></span> <span class="mention-count">4 times</span></div>
+  </div>
+
+  <h3>Key Facts About Prophetic Mentions</h3>
+  <div class="prophet-highlight">
+    <ul>
+      <li><strong>The Most Mentioned Prophet:</strong> Prophet Musa (Moses) is the most frequently mentioned individual in the entire Quran, with his name appearing <strong>136 times</strong>.</li>
+      <li><strong>Prophet Muhammad (PBUH):</strong> Although he is the final messenger and the recipient of the Quran, his actual name "Muhammad" is mentioned only <strong>4 times</strong>. He is also referred to once as "Ahmad" (Surah As-Saf 61:6) and frequently addressed by titles such as "O Prophet" (Ya-Ayyuha an-Nabi) and "O Messenger" (Ya-Ayyuha ar-Rasul).</li>
+      <li><strong>Prophet Isa (Jesus) and Maryam:</strong> Prophet Isa is mentioned <strong>25 times</strong>. His mother, Maryam (Mary), is the only woman mentioned by her actual name in the Quran, and her name appears more times in the Quran than in the entire New Testament.</li>
+      <li><strong>The Prophets of Strong Will (Ulul 'Azm):</strong> Five prophets are given the highest title of <strong>Ulul 'Azm</strong> (Possessors of Constancy/Strong Will) due to the immense hardships they faced and their unwavering patience. These five are: <strong>Nuh (Noah), Ibrahim (Abraham), Musa (Moses), Isa (Jesus), and Muhammad (PBUH)</strong> (referenced in Surah Al-Ahqaf 46:35 and Surah Ash-Shura 42:13).</li>
+      <li><strong>The Core Message:</strong> Despite being sent to different nations at different times, the Quran emphasizes that every prophet brought the exact same core message: <strong>the oneness of God (Tawheed) and the command to worship Him alone</strong> (Surah Al-Anbiya 21:25).</li>
+    </ul>
+  </div>
+
+  <hr />
+
   <!-- Free resources -->
   <h2>Free Religious Books and Resources</h2>
   <p>Access to authentic Islamic knowledge should be open to all. Below are recommended free resources:</p>
@@ -432,58 +544,4 @@
   <h3>Important Links:</h3>
   <ol class="link-list" type="1">
     <li><a href="https://play.google.com/store/apps/details?id=com.athan&amp;hl=en" target="_blank" rel="noopener">Athan - Call for Prayers - Android App</a></li>
-    <li><a href="https://www.youtube.com/watch?v=vx1rz-28HNk" target="_blank" rel="noopener">The Prophet's Prayer Described - Assim al-Hakeem - YouTube Video</a></li>
-    <li><a href="https://play.google.com/store/apps/details?id=com.afrodawah.hisnulmuslimenglish&amp;hl=en" target="_blank" rel="noopener">Hisnul Muslim - Android App</a></li>
-    <li><a href="https://play.google.com/store/apps/details?id=quran.taj.namazenglish&amp;hl=en" target="_blank" rel="noopener">Namaz English by Taj Company - Android App</a></li>
-    <li><a href="https://Quran.com" target="_blank" rel="noopener">Quran - Online Translation / Recitation / Tafseer</a></li>
-    <li><a href="https://archive.org/details/Namaz-e-nabawisawUrduBook" target="_blank" rel="noopener">Book - Namaz Nabvi (PBUH) & Supplication  - URDU</a></li>
-    <li><a href="https://archive.org/details/hisnul-muslim-urdu/mode/1up" target="_blank" rel="noopener">Book - Hisnul Muslim in Urdu - Supplication - by Sheikh Saeed bin Ali bin Wahb Al-Qahtani</a></li>
-  </ol>
-
-  <hr />
-
-  <!-- Final Reflection -->
-  <div class="final-reflection">
-    <h2 style="margin-top: 0;">Final Reflection</h2>
-    <p>In a world often disconnected from spiritual values, Islam offers a comprehensive way of life that nurtures the individual, strengthens communities, and promotes peace and justice. Through the Quran, authentic hadith, and the Five Pillars, believers find guidance for every aspect of life. The practices of Zikr and Namaz provide daily connection with Allah, cultivating inner peace and moral excellence.</p>
-    <blockquote style="background: transparent; border-left-color: #1e5f6b; padding-left: 1.2rem; margin: 1rem 0;">
-      <p><em>"Indeed, the most honored of you in the sight of God is the most righteous of you."</em> (Quran 49:13)</p>
-    </blockquote>
-    <p>May this guide serve as a step toward deeper understanding and practice of the beautiful faith of Islam.</p>
-  </div>
-
-  <!-- footer with support email & whatsapp channel -->
-  <div class="footer-meta">
-    <div class="left-group">
-      <span>
-        <a href="https://www.guide2islam.com" target="_blank" rel="noopener">guide2islam.com</a> · July 2026
-      </span>
-      <!-- WhatsApp channel link with small green icon -->
-      <a href="https://whatsapp.com/channel/0029Vb8Q5rB8aKvBJCbEJk0G" target="_blank" rel="noopener" class="whatsapp-link" aria-label="WhatsApp Channel">
-        <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-        </svg>
-        <span>WhatsApp</span>
-       
-      </a>
-    </div>
-    <div class="right-group">
-      <span> </span>
-      <span class="support-email">
-        ✧ Contact: 
-        ✉ <a href="mailto:aftabdev@atomicmail.io">aftabdev@atomicmail.io</a>
-      </span>
-    </div>
-  </div>
-
-  <!-- hidden microdata for search (additional) -->
-  <div class="microdata" itemscope itemtype="https://schema.org/Article">
-    <span itemprop="name">Islamic Guidance: A Guide to Islam, Hadith, Faith, and Spiritual Practice</span>
-    <span itemprop="author">Aftab Shaikh</span>
-    <span itemprop="datePublished">2026-07-18</span>
-  </div>
-</div>
-</body>
-   
-  
-</html>
+    <li><a href="https://www.youtube.com/watch?v=vx1rz-28HNk" target
